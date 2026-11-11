@@ -1,0 +1,1395 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VEERAGH BIOGAS PRIVATE LIMITED | Renewable Energy Solutions</title>
+  <meta name="description" content="VEERAGH BIOGAS PRIVATE LIMITED: renewable energy, biogas, biofuel, green hydrogen and waste-to-energy solutions.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: '#102B20',
+            deep: '#091D15',
+            green: '#397B50',
+            lime: '#A4CF75',
+            cream: '#F5F7F1',
+            muted: '#68766C'
+          },
+          fontFamily: {
+            sans: ['DM Sans', 'sans-serif'],
+            heading: ['Manrope', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; }
+    h1,h2,h3,h4 { font-family: 'Manrope', sans-serif; }
+
+    .hero {
+      background:
+        linear-gradient(90deg, rgba(7,25,17,.96) 0%, rgba(7,25,17,.82) 45%, rgba(7,25,17,.15) 100%),
+        url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=2000&q=85');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .section-label {
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 800;
+      color: #397B50;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(25px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .service-card img,
+    .project-card img {
+      transition: transform .6s ease;
+    }
+
+    .service-card:hover img,
+    .project-card:hover img {
+      transform: scale(1.07);
+    }
+
+    .green-line {
+      background: linear-gradient(90deg,#A4CF75,#397B50);
+    }
+
+    .nav-link { transition: color .3s ease; }
+    .nav-link:hover { color: #83B65E; }
+
+    .hero-pattern {
+      background-image: radial-gradient(rgba(255,255,255,.1) 1px, transparent 1px);
+      background-size: 25px 25px;
+    }
+
+
+    /* Responsive layout refinements */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-padding-top: 84px; }
+    body { overflow-x: hidden; }
+    img { max-width: 100%; }
+    section[id] { scroll-margin-top: 84px; }
+
+    @media (max-width: 1023px) {
+      .hero {
+        min-height: 680px;
+        background-position: 60% center;
+        background-image:
+          linear-gradient(90deg, rgba(7,25,17,.96) 0%, rgba(7,25,17,.88) 58%, rgba(7,25,17,.55) 100%),
+          url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1400&q=85');
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        min-height: 650px;
+        background-position: 62% center;
+      }
+      .hero .max-w-7xl {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .hero .inline-flex {
+        max-width: 100%;
+        padding-left: .85rem;
+        padding-right: .85rem;
+      }
+      .hero .inline-flex span:last-child {
+        font-size: 9px;
+        letter-spacing: 1.2px;
+      }
+      .hero h1 {
+        font-size: clamp(2.15rem, 9vw, 3rem);
+        line-height: 1.12;
+      }
+      .hero p {
+        font-size: 14px;
+        line-height: 1.8;
+      }
+      .hero .grid {
+        gap: 1.25rem;
+        margin-top: 2.5rem;
+      }
+      .section-label { letter-spacing: 2px; }
+      #about .relative > .rounded-3xl { height: 330px; }
+      #about .absolute.-bottom-7 {
+        right: .5rem;
+        bottom: -1.25rem;
+        padding: 1rem;
+      }
+      #about .absolute.-bottom-7 h3 { font-size: 1rem; }
+      #about .absolute.-bottom-7 p { line-height: 1.5; }
+      #infrastructure .grid.grid-cols-2 img {
+        height: 180px;
+      }
+      #contact form input,
+      #contact form select,
+      #contact form textarea {
+        font-size: 16px; /* prevents iOS Safari from zooming on focus */
+      }
+      #contact .grid {
+        gap: 2rem;
+      }
+      footer .grid { gap: 2rem; }
+      #backToTop {
+        right: 1.25rem;
+        bottom: 5.5rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+    }
+
+  </style>
+</head>
+
+<body class="bg-white text-forest">
+
+<!-- ================= NAVBAR ================= -->
+
+<header id="mainHeader" class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-lg shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-5 lg:px-8">
+    <div class="min-h-[72px] sm:h-20 flex items-center justify-between gap-3">
+
+      <a href="#home" class="flex items-center gap-2 sm:gap-3 min-w-0">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 shrink-0 rounded-xl bg-forest flex items-center justify-center text-lime text-lg sm:text-xl">
+          <i class="fa-solid fa-leaf"></i>
+        </div>
+        <div class="min-w-0">
+          <h2 class="text-[12px] xs:text-sm sm:text-base md:text-lg lg:text-xl font-extrabold tracking-tight text-forest leading-tight">
+            VEERAGH BIOGAS
+          </h2>
+          <p class="text-[9px] sm:text-[10px] tracking-[1.5px] sm:tracking-[2px] font-bold text-green mt-1">
+            PRIVATE LIMITED
+          </p>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-5 xl:gap-8 text-[13px] font-semibold text-forest">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#business" class="nav-link">Our Business</a>
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#sustainability" class="nav-link">Sustainability</a>
+      </nav>
+
+      <a href="#contact" class="hidden lg:flex items-center gap-3 bg-forest text-white px-5 xl:px-6 py-3 rounded-full text-sm font-semibold hover:bg-green transition">
+        Let's Connect <i class="fa-solid fa-arrow-right text-lime"></i>
+      </a>
+
+      <button id="menuBtn" type="button"
+        class="lg:hidden w-10 h-10 shrink-0 flex items-center justify-center text-xl text-forest rounded-lg hover:bg-green/10 transition"
+        aria-label="Open navigation" aria-expanded="false" aria-controls="mobileMenu">
+        <i id="menuIcon" class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <nav id="mobileMenu" class="hidden lg:hidden flex-col gap-1 pb-5 pt-2 border-t border-gray-100">
+      <a href="#home" class="mobile-link py-2.5 px-2 text-sm font-semibold text-forest hover:text-green">Home</a>
+      <a href="#about" class="mobile-link py-2.5 px-2 text-sm font-semibold text-forest hover:text-green">About Us</a>
+      <a href="#business" class="mobile-link py-2.5 px-2 text-sm font-semibold text-forest hover:text-green">Our Business</a>
+      <a href="#products" class="mobile-link py-2.5 px-2 text-sm font-semibold text-forest hover:text-green">Products</a>
+      <a href="#projects" class="mobile-link py-2.5 px-2 text-sm font-semibold text-forest hover:text-green">Projects</a>
+      <a href="#sustainability" class="mobile-link py-2.5 px-2 text-sm font-semibold text-forest hover:text-green">Sustainability</a>
+      <a href="#contact" class="mobile-link py-2.5 px-2 text-sm font-bold text-green">Contact Us →</a>
+    </nav>
+  </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero min-h-[720px] lg:min-h-[790px] flex items-center relative overflow-hidden pt-24">
+  <div class="absolute inset-0 hero-pattern opacity-30"></div>
+
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 w-full relative z-10">
+    <div class="max-w-3xl reveal active">
+
+      <div class="inline-flex items-center gap-3 border border-lime/40 bg-white/5 backdrop-blur-md rounded-full px-5 py-2 mb-8">
+        <span class="w-2 h-2 rounded-full bg-lime"></span>
+        <span class="text-lime text-[11px] font-bold tracking-[2px] uppercase">Powering a Sustainable Tomorrow</span>
+      </div>
+
+      <h1 class="text-4xl sm:text-5xl lg:text-[68px] leading-[1.13] font-extrabold text-white mb-7">
+        Turning Waste Into
+        <span class="text-lime">Worth.</span>
+        <br>
+        Powering Tomorrow.
+      </h1>
+
+      <p class="text-gray-300 text-base lg:text-lg leading-8 max-w-2xl mb-10">
+        Transforming organic waste into valuable renewable energy, clean fuels and sustainable products through innovative technology and integrated infrastructure solutions.
+      </p>
+
+      <div class="flex flex-wrap gap-4">
+        <a href="#business" class="bg-lime text-forest px-8 py-4 rounded-full font-bold text-sm hover:bg-white transition">
+          Explore Our Business <i class="fa-solid fa-arrow-right ml-2"></i>
+        </a>
+        <a href="#about" class="border border-white/50 text-white px-8 py-4 rounded-full font-semibold text-sm hover:bg-white hover:text-forest transition">
+          Discover More
+        </a>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-7 mt-16 pt-8 border-t border-white/20 max-w-2xl">
+        <div>
+          <h3 class="text-2xl font-bold text-lime">Clean</h3>
+          <p class="text-gray-400 text-xs mt-2">Energy Solutions</p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-lime">Circular</h3>
+          <p class="text-gray-400 text-xs mt-2">Waste Management</p>
+        </div>
+        <div class="col-span-2 sm:col-span-1">
+          <h3 class="text-2xl font-bold text-lime">Green</h3>
+          <p class="text-gray-400 text-xs mt-2">Future Technologies</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="absolute bottom-0 right-0 w-72 h-72 bg-green/20 blur-[120px]"></div>
+</section>
+
+
+<!-- ================= INTRO STRIP ================= -->
+
+<section class="bg-forest py-8">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-6 text-white">
+    <div class="flex items-center gap-3">
+      <i class="fa-solid fa-recycle text-lime text-2xl"></i>
+      <div>
+        <h4 class="font-bold text-sm">Waste to Value</h4>
+        <p class="text-gray-400 text-xs mt-1">Resource Recovery</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-3">
+      <i class="fa-solid fa-bolt text-lime text-2xl"></i>
+      <div>
+        <h4 class="font-bold text-sm">Clean Energy</h4>
+        <p class="text-gray-400 text-xs mt-1">Renewable Fuels</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-3">
+      <i class="fa-solid fa-industry text-lime text-2xl"></i>
+      <div>
+        <h4 class="font-bold text-sm">Infrastructure</h4>
+        <p class="text-gray-400 text-xs mt-1">Integrated Facilities</p>
+      </div>
+    </div>
+    <div class="flex items-center gap-3">
+      <i class="fa-solid fa-earth-asia text-lime text-2xl"></i>
+      <div>
+        <h4 class="font-bold text-sm">Sustainability</h4>
+        <p class="text-gray-400 text-xs mt-1">A Greener Tomorrow</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="py-24 lg:py-32 bg-white">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+
+    <div class="relative reveal">
+      <div class="rounded-3xl overflow-hidden h-[450px] lg:h-[550px]">
+        <img
+          src="https://ik.imagekit.io/iuiy6mihw/verabagh/about_section.avif" loading="lazy"
+          class="w-full h-full object-cover"
+          alt="Sustainable green energy landscape">
+      </div>
+
+      <div class="absolute -bottom-7 -right-3 sm:right-[-25px] bg-forest text-white p-7 rounded-2xl shadow-2xl max-w-[230px]">
+        <i class="fa-solid fa-seedling text-lime text-3xl mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">A Greener Vision</h3>
+        <p class="text-gray-300 text-xs leading-6">Building a sustainable future through responsible resource utilization.</p>
+      </div>
+
+      <div class="absolute top-7 left-7 bg-white/95 rounded-xl px-5 py-3 shadow-lg">
+        <p class="text-[10px] tracking-widest text-green font-bold">OUR PURPOSE</p>
+        <p class="text-sm font-bold mt-1">Energy. Innovation. Impact.</p>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <p class="section-label mb-5">About Our Company</p>
+
+      <h2 class="text-3xl lg:text-5xl font-extrabold leading-tight mb-7">
+        Creating Value Through
+        <span class="text-green">Sustainable Energy.</span>
+      </h2>
+
+      <p class="text-muted leading-8 mb-6">
+        We aim to contribute to the renewable energy sector through the development, engineering, establishment and operation of advanced waste-to-energy and clean fuel infrastructure.
+      </p>
+
+      <p class="text-muted leading-8 mb-9">
+        Our business approach focuses on converting organic, agricultural, industrial and other biodegradable waste into renewable fuels, carbon-based products and valuable agricultural by-products.
+      </p>
+
+      <div class="grid sm:grid-cols-2 gap-6 mb-10">
+        <div class="flex gap-4">
+          <div class="w-12 h-12 shrink-0 bg-cream rounded-xl flex items-center justify-center text-green text-xl">
+            <i class="fa-solid fa-eye"></i>
+          </div>
+          <div>
+            <h3 class="font-bold mb-2">Our Vision</h3>
+            <p class="text-muted text-sm leading-6">To support a cleaner, resource-efficient and sustainable future.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <div class="w-12 h-12 shrink-0 bg-cream rounded-xl flex items-center justify-center text-green text-xl">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+          <div>
+            <h3 class="font-bold mb-2">Our Mission</h3>
+            <p class="text-muted text-sm leading-6">To promote renewable energy and responsible waste utilization.</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#contact" class="inline-flex items-center gap-3 font-bold text-green text-sm border-b-2 border-lime pb-2">
+        Know More About Us <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= BUSINESS ================= -->
+
+<section id="business" class="py-24 bg-cream">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+    <div class="max-w-2xl mx-auto text-center mb-16 reveal">
+      <p class="section-label mb-4">Our Business</p>
+      <h2 class="text-3xl lg:text-5xl font-extrabold mb-6">
+        Integrated Solutions for a
+        <span class="text-green">Cleaner World.</span>
+      </h2>
+      <p class="text-muted leading-7">
+        From waste processing to renewable fuel production, we focus on developing integrated solutions across the clean energy value chain.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
+
+      <div class="service-card bg-white rounded-2xl overflow-hidden group reveal">
+        <div class="h-60 overflow-hidden">
+          <img src="https://ik.imagekit.io/iuiy6mihw/verabagh/business_img1.avif" loading="lazy" class="w-full h-full object-cover" alt="Industrial energy infrastructure">
+        </div>
+        <div class="p-7">
+          <div class="w-12 h-12 rounded-xl bg-cream flex items-center justify-center text-green text-xl mb-5">
+            <i class="fa-solid fa-industry"></i>
+          </div>
+          <h3 class="font-extrabold text-xl mb-3">Plant Engineering</h3>
+          <p class="text-muted text-sm leading-7 mb-5">Designing, engineering, developing and constructing advanced renewable energy plants and facilities.</p>
+          <a href="#infrastructure" class="text-green font-bold text-sm">Explore More →</a>
+        </div>
+      </div>
+
+      <div class="service-card bg-white rounded-2xl overflow-hidden group reveal">
+        <div class="h-60 overflow-hidden">
+          <img src="https://ik.imagekit.io/iuiy6mihw/verabagh/business_img2.jpg" loading="lazy" class="w-full h-full object-cover" alt="Renewable energy facility">
+        </div>
+        <div class="p-7">
+          <div class="w-12 h-12 rounded-xl bg-cream flex items-center justify-center text-green text-xl mb-5">
+            <i class="fa-solid fa-fire-flame-simple"></i>
+          </div>
+          <h3 class="font-extrabold text-xl mb-3">Renewable Gas</h3>
+          <p class="text-muted text-sm leading-7 mb-5">Processing, purification, separation, compression and upgrading of renewable gases.</p>
+          <a href="#products" class="text-green font-bold text-sm">Explore More →</a>
+        </div>
+      </div>
+
+      <div class="service-card bg-white rounded-2xl overflow-hidden group reveal">
+        <div class="h-60 overflow-hidden">
+          <img src="https://ik.imagekit.io/iuiy6mihw/verabagh/business_img3.avif" loading="lazy" class="w-full h-full object-cover" alt="Waste recycling">
+        </div>
+        <div class="p-7">
+          <div class="w-12 h-12 rounded-xl bg-cream flex items-center justify-center text-green text-xl mb-5">
+            <i class="fa-solid fa-recycle"></i>
+          </div>
+          <h3 class="font-extrabold text-xl mb-3">Waste Processing</h3>
+          <p class="text-muted text-sm leading-7 mb-5">Utilizing organic, agricultural, municipal and industrial biodegradable waste resources.</p>
+          <a href="#process" class="text-green font-bold text-sm">Explore More →</a>
+        </div>
+      </div>
+
+      <div class="service-card bg-white rounded-2xl overflow-hidden group reveal">
+        <div class="h-60 overflow-hidden">
+          <img src="https://ik.imagekit.io/iuiy6mihw/verabagh/about_section.avif" loading="lazy" class="w-full h-full object-cover" alt="Green hydrogen energy">
+        </div>
+        <div class="p-7">
+          <div class="w-12 h-12 rounded-xl bg-cream flex items-center justify-center text-green text-xl mb-5">
+            <i class="fa-solid fa-atom"></i>
+          </div>
+          <h3 class="font-extrabold text-xl mb-3">Green Energy</h3>
+          <p class="text-muted text-sm leading-7 mb-5">Developing solutions around green hydrogen, biofuels and alternative energy products.</p>
+          <a href="#products" class="text-green font-bold text-sm">Explore More →</a>
+        </div>
+      </div>
+
+      <div class="service-card bg-white rounded-2xl overflow-hidden group reveal">
+        <div class="h-60 overflow-hidden">
+          <img src="https://ik.imagekit.io/iuiy6mihw/verabagh/business_img5.jpg" loading="lazy" class="w-full h-full object-cover" alt="Sustainable agriculture">
+        </div>
+        <div class="p-7">
+          <div class="w-12 h-12 rounded-xl bg-cream flex items-center justify-center text-green text-xl mb-5">
+            <i class="fa-solid fa-seedling"></i>
+          </div>
+          <h3 class="font-extrabold text-xl mb-3">By-product Recovery</h3>
+          <p class="text-muted text-sm leading-7 mb-5">Recovering carbon dioxide, organic manure, slurry and other value-added products.</p>
+          <a href="#products" class="text-green font-bold text-sm">Explore More →</a>
+        </div>
+      </div>
+
+      <div class="service-card bg-white rounded-2xl overflow-hidden group reveal">
+        <div class="h-60 overflow-hidden">
+          <img src="https://ik.imagekit.io/iuiy6mihw/verabagh/business_img6.jpg" loading="lazy" class="w-full h-full object-cover" alt="Industrial infrastructure">
+        </div>
+        <div class="p-7">
+          <div class="w-12 h-12 rounded-xl bg-cream flex items-center justify-center text-green text-xl mb-5">
+            <i class="fa-solid fa-gears"></i>
+          </div>
+          <h3 class="font-extrabold text-xl mb-3">Operations & Management</h3>
+          <p class="text-muted text-sm leading-7 mb-5">Operating, managing, maintaining and upgrading renewable energy facilities.</p>
+          <a href="#infrastructure" class="text-green font-bold text-sm">Explore More →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section id="products" class="py-24 lg:py-32 bg-white">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14 reveal">
+      <div class="max-w-2xl">
+        <p class="section-label mb-4">Our Products</p>
+        <h2 class="text-3xl lg:text-5xl font-extrabold leading-tight">
+          Products That
+          <span class="text-green">Power Progress.</span>
+        </h2>
+      </div>
+      <p class="text-muted max-w-md text-sm leading-7">
+        A diverse range of renewable fuels, energy products and resource-recovery solutions derived from biodegradable materials.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
+
+      <div class="border border-gray-100 rounded-2xl p-5 hover:shadow-xl hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-xl bg-cream flex items-center justify-center text-green text-xl mb-5">
+          <i class="fa-solid fa-cubes"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Biochar</h3>
+        <p class="text-muted text-xs leading-6">Carbon-rich material produced from biomass.</p>
+      </div>
+
+      <div class="border border-gray-100 rounded-2xl p-5 hover:shadow-xl hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-xl bg-cream flex items-center justify-center text-green text-xl mb-5">
+          <i class="fa-solid fa-layer-group"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Hydrochar</h3>
+        <p class="text-muted text-xs leading-6">Hydrothermal conversion-based carbon product.</p>
+      </div>
+
+      <div class="border border-gray-100 rounded-2xl p-5 hover:shadow-xl hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-xl bg-cream flex items-center justify-center text-green text-xl mb-5">
+          <i class="fa-solid fa-fire"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Raw Biogas</h3>
+        <p class="text-muted text-xs leading-6">Renewable gas generated from organic waste.</p>
+      </div>
+
+      <div class="border border-gray-100 rounded-2xl p-5 hover:shadow-xl hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-xl bg-cream flex items-center justify-center text-green text-xl mb-5">
+          <i class="fa-solid fa-gas-pump"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-2">CBG / Bio-CNG</h3>
+        <p class="text-muted text-xs leading-6">Compressed and upgraded renewable gas.</p>
+      </div>
+
+      <div class="border border-gray-100 rounded-2xl p-5 hover:shadow-xl hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-xl bg-cream flex items-center justify-center text-green text-xl mb-5">
+          <i class="fa-solid fa-cloud"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-2">LBG / RNG</h3>
+        <p class="text-muted text-xs leading-6">Liquefied biogas and renewable natural gas.</p>
+      </div>
+
+      <div class="border border-gray-100 rounded-2xl p-5 hover:shadow-xl hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-xl bg-cream flex items-center justify-center text-green text-xl mb-5">
+          <i class="fa-solid fa-droplet"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Biofuels</h3>
+        <p class="text-muted text-xs leading-6">Bioethanol, biodiesel and other alternative fuels.</p>
+      </div>
+
+      <div class="border border-gray-100 rounded-2xl p-5 hover:shadow-xl hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-xl bg-cream flex items-center justify-center text-green text-xl mb-5">
+          <i class="fa-solid fa-atom"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-2">Green Hydrogen</h3>
+        <p class="text-muted text-xs leading-6">Clean hydrogen-based energy products.</p>
+      </div>
+
+      <div class="border border-gray-100 rounded-2xl p-5 hover:shadow-xl hover:-translate-y-1 transition">
+        <div class="w-12 h-12 rounded-xl bg-cream flex items-center justify-center text-green text-xl mb-5">
+          <i class="fa-solid fa-leaf"></i>
+        </div>
+        <h3 class="font-bold text-lg mb-2">FOM / LFOM</h3>
+        <p class="text-muted text-xs leading-6">Organic manure and liquid agricultural by-products.</p>
+      </div>
+
+    </div>
+
+    <div class="mt-8 bg-forest rounded-2xl px-7 py-6 flex flex-col sm:flex-row items-center justify-between gap-5">
+      <div class="flex items-center gap-4">
+        <i class="fa-solid fa-circle-info text-lime text-2xl"></i>
+        <p class="text-white text-sm">Additional recovered products include CO₂, slurry and other value-added by-products.</p>
+      </div>
+      <a href="#contact" class="text-lime font-bold text-sm whitespace-nowrap">Business Enquiry →</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= PROCESS ================= -->
+
+<section id="process" class="py-24 bg-cream">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+    <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+      <p class="section-label mb-4">Our Approach</p>
+      <h2 class="text-3xl lg:text-5xl font-extrabold mb-6">
+        From Waste to
+        <span class="text-green">Renewable Value.</span>
+      </h2>
+      <p class="text-muted leading-7">
+        An integrated approach to converting organic resources into useful renewable products and energy solutions.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-5">
+
+      <div class="bg-white p-6 rounded-2xl reveal">
+        <span class="text-4xl font-extrabold text-lime">01</span>
+        <div class="text-green text-2xl my-6"><i class="fa-solid fa-truck"></i></div>
+        <h3 class="font-bold mb-3">Waste Sourcing</h3>
+        <p class="text-muted text-xs leading-6">Collection and sourcing of organic and biodegradable waste.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl reveal">
+        <span class="text-4xl font-extrabold text-lime">02</span>
+        <div class="text-green text-2xl my-6"><i class="fa-solid fa-filter"></i></div>
+        <h3 class="font-bold mb-3">Pre-processing</h3>
+        <p class="text-muted text-xs leading-6">Sorting, preparation and conditioning of raw materials.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl reveal">
+        <span class="text-4xl font-extrabold text-lime">03</span>
+        <div class="text-green text-2xl my-6"><i class="fa-solid fa-gears"></i></div>
+        <h3 class="font-bold mb-3">Conversion</h3>
+        <p class="text-muted text-xs leading-6">Processing waste using suitable conversion technologies.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl reveal">
+        <span class="text-4xl font-extrabold text-lime">04</span>
+        <div class="text-green text-2xl my-6"><i class="fa-solid fa-vial-circle-check"></i></div>
+        <h3 class="font-bold mb-3">Purification</h3>
+        <p class="text-muted text-xs leading-6">Separation, purification and upgrading of products.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl reveal">
+        <span class="text-4xl font-extrabold text-lime">05</span>
+        <div class="text-green text-2xl my-6"><i class="fa-solid fa-gas-pump"></i></div>
+        <h3 class="font-bold mb-3">Energy Production</h3>
+        <p class="text-muted text-xs leading-6">Production of renewable fuels and energy products.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-2xl reveal">
+        <span class="text-4xl font-extrabold text-lime">06</span>
+        <div class="text-green text-2xl my-6"><i class="fa-solid fa-boxes-stacked"></i></div>
+        <h3 class="font-bold mb-3">Distribution</h3>
+        <p class="text-muted text-xs leading-6">Storage, handling, transportation and supply.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= INFRASTRUCTURE ================= -->
+
+<section id="infrastructure" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+
+    <div class="reveal">
+      <p class="section-label mb-4">Infrastructure & Capabilities</p>
+      <h2 class="text-3xl lg:text-5xl font-extrabold leading-tight mb-7">
+        Complete Solutions Across the
+        <span class="text-green">Energy Value Chain.</span>
+      </h2>
+      <p class="text-muted leading-8 mb-9">
+        From initial planning and engineering to operations, distribution and maintenance, our business model encompasses the complete lifecycle of renewable energy infrastructure.
+      </p>
+
+      <div class="space-y-6">
+        <div class="flex gap-4">
+          <i class="fa-solid fa-circle-check text-green text-xl mt-1"></i>
+          <div>
+            <h3 class="font-bold mb-1">Design & Engineering</h3>
+            <p class="text-muted text-sm">Plant design, technical planning and engineering development.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <i class="fa-solid fa-circle-check text-green text-xl mt-1"></i>
+          <div>
+            <h3 class="font-bold mb-1">Construction & Establishment</h3>
+            <p class="text-muted text-sm">Development and construction of integrated industrial facilities.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <i class="fa-solid fa-circle-check text-green text-xl mt-1"></i>
+          <div>
+            <h3 class="font-bold mb-1">Operations & Maintenance</h3>
+            <p class="text-muted text-sm">Management, maintenance, upgradation and operational support.</p>
+          </div>
+        </div>
+
+        <div class="flex gap-4">
+          <i class="fa-solid fa-circle-check text-green text-xl mt-1"></i>
+          <div>
+            <h3 class="font-bold mb-1">Storage & Distribution</h3>
+            <p class="text-muted text-sm">Storage, bulk handling, transportation and supply infrastructure.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 reveal">
+      <img src="https://ik.imagekit.io/iuiy6mihw/verabagh/business_img1.avif" loading="lazy" class="rounded-2xl h-64 w-full object-cover" alt="Industrial plant">
+      <img src="https://ik.imagekit.io/iuiy6mihw/verabagh/infrastructure_section2.avif" loading="lazy" class="rounded-2xl h-64 w-full object-cover mt-10" alt="Energy infrastructure">
+      <img src="https://ik.imagekit.io/iuiy6mihw/verabagh/about_section.avif" loading="lazy" class="rounded-2xl h-64 w-full object-cover" alt="Renewable energy">
+      <img src="https://ik.imagekit.io/iuiy6mihw/verabagh/business_img3.avif" loading="lazy" class="rounded-2xl h-64 w-full object-cover mt-10" alt="Waste processing">
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= TECHNOLOGY ================= -->
+
+<section class="py-24 bg-forest text-white relative overflow-hidden">
+  <div class="absolute -right-40 -top-40 w-96 h-96 bg-green/20 blur-[120px] rounded-full"></div>
+
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 relative z-10">
+
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <div class="reveal">
+        <p class="text-lime section-label mb-5">Technology & Innovation</p>
+        <h2 class="text-3xl lg:text-5xl font-extrabold leading-tight mb-7">
+          Technology Driving
+          <span class="text-lime">Energy Transformation.</span>
+        </h2>
+        <p class="text-gray-300 leading-8 mb-9">
+          Advanced processing, purification and gas-upgradation technologies play an important role in transforming organic resources into renewable energy products.
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div class="border border-white/15 rounded-xl p-5">
+            <i class="fa-solid fa-flask text-lime text-2xl mb-4"></i>
+            <h3 class="font-bold mb-2">Gas Purification</h3>
+            <p class="text-gray-400 text-xs leading-6">Purification and separation processes.</p>
+          </div>
+          <div class="border border-white/15 rounded-xl p-5">
+            <i class="fa-solid fa-compress text-lime text-2xl mb-4"></i>
+            <h3 class="font-bold mb-2">Gas Compression</h3>
+            <p class="text-gray-400 text-xs leading-6">Compression and liquefaction systems.</p>
+          </div>
+          <div class="border border-white/15 rounded-xl p-5">
+            <i class="fa-solid fa-atom text-lime text-2xl mb-4"></i>
+            <h3 class="font-bold mb-2">Gas Upgradation</h3>
+            <p class="text-gray-400 text-xs leading-6">Biomethane and renewable gas upgrading.</p>
+          </div>
+          <div class="border border-white/15 rounded-xl p-5">
+            <i class="fa-solid fa-leaf text-lime text-2xl mb-4"></i>
+            <h3 class="font-bold mb-2">Carbon Recovery</h3>
+            <p class="text-gray-400 text-xs leading-6">Recovery and utilization of CO₂.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative reveal">
+        <img src="https://ik.imagekit.io/iuiy6mihw/verabagh/business_img1.avif" loading="lazy" class="rounded-3xl w-full h-[500px] object-cover" alt="Renewable energy technology">
+        <div class="absolute inset-0 rounded-3xl bg-gradient-to-t from-forest/70 to-transparent"></div>
+        <div class="absolute bottom-8 left-8 right-8">
+          <p class="text-lime text-xs tracking-widest font-bold mb-3">INNOVATION FOR IMPACT</p>
+          <h3 class="text-2xl sm:text-3xl font-bold">Engineering a Better Energy Future</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= INDUSTRIES ================= -->
+
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <p class="section-label mb-4">Industries We Serve</p>
+      <h2 class="text-3xl lg:text-5xl font-extrabold mb-5">
+        Supporting a Wide Range of
+        <span class="text-green">Industries.</span>
+      </h2>
+      <p class="text-muted leading-7">Renewable energy and resource recovery opportunities across multiple sectors.</p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+
+      <div class="bg-cream rounded-2xl p-7 text-center hover:bg-forest hover:text-white transition group reveal">
+        <i class="fa-solid fa-wheat-awn text-3xl text-green group-hover:text-lime mb-5"></i>
+        <h3 class="font-bold text-sm">Agriculture</h3>
+      </div>
+
+      <div class="bg-cream rounded-2xl p-7 text-center hover:bg-forest hover:text-white transition group reveal">
+        <i class="fa-solid fa-bolt text-3xl text-green group-hover:text-lime mb-5"></i>
+        <h3 class="font-bold text-sm">Energy & Power</h3>
+      </div>
+
+      <div class="bg-cream rounded-2xl p-7 text-center hover:bg-forest hover:text-white transition group reveal">
+        <i class="fa-solid fa-truck-fast text-3xl text-green group-hover:text-lime mb-5"></i>
+        <h3 class="font-bold text-sm">Transportation</h3>
+      </div>
+
+      <div class="bg-cream rounded-2xl p-7 text-center hover:bg-forest hover:text-white transition group reveal">
+        <i class="fa-solid fa-industry text-3xl text-green group-hover:text-lime mb-5"></i>
+        <h3 class="font-bold text-sm">Manufacturing</h3>
+      </div>
+
+      <div class="bg-cream rounded-2xl p-7 text-center hover:bg-forest hover:text-white transition group reveal">
+        <i class="fa-solid fa-city text-3xl text-green group-hover:text-lime mb-5"></i>
+        <h3 class="font-bold text-sm">Municipalities</h3>
+      </div>
+
+      <div class="bg-cream rounded-2xl p-7 text-center hover:bg-forest hover:text-white transition group reveal">
+        <i class="fa-solid fa-seedling text-3xl text-green group-hover:text-lime mb-5"></i>
+        <h3 class="font-bold text-sm">Fertilizers</h3>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= SUSTAINABILITY ================= -->
+
+<section id="sustainability" class="relative py-28 bg-cover bg-center"
+  style="background-image:linear-gradient(rgba(8,31,20,.92),rgba(8,31,20,.94)),url('https://ik.imagekit.io/iuiy6mihw/verabagh/infrastructure_section2.avif')">
+
+  <div class="max-w-7xl mx-auto px-5 lg:px-8 text-center text-white">
+
+    <div class="max-w-3xl mx-auto reveal">
+      <p class="text-lime section-label mb-5">Sustainability & Impact</p>
+      <h2 class="text-3xl lg:text-5xl font-extrabold leading-tight mb-7">
+        Building a Circular Economy for a
+        <span class="text-lime">Greener Tomorrow.</span>
+      </h2>
+      <p class="text-gray-300 leading-8 mb-14">
+        We believe that waste can become a valuable resource. By promoting responsible waste utilization and renewable energy development, we aim to contribute to a more sustainable future.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 text-left">
+
+      <div class="border border-white/20 rounded-2xl p-7 bg-white/5 reveal">
+        <i class="fa-solid fa-recycle text-lime text-3xl mb-6"></i>
+        <h3 class="font-bold text-lg mb-3">Resource Recovery</h3>
+        <p class="text-gray-400 text-sm leading-6">Turning biodegradable waste into valuable resources.</p>
+      </div>
+
+      <div class="border border-white/20 rounded-2xl p-7 bg-white/5 reveal">
+        <i class="fa-solid fa-earth-asia text-lime text-3xl mb-6"></i>
+        <h3 class="font-bold text-lg mb-3">Environmental Care</h3>
+        <p class="text-gray-400 text-sm leading-6">Supporting responsible resource and waste management.</p>
+      </div>
+
+      <div class="border border-white/20 rounded-2xl p-7 bg-white/5 reveal">
+        <i class="fa-solid fa-leaf text-lime text-3xl mb-6"></i>
+        <h3 class="font-bold text-lg mb-3">Clean Energy</h3>
+        <p class="text-gray-400 text-sm leading-6">Encouraging renewable and alternative energy adoption.</p>
+      </div>
+
+      <div class="border border-white/20 rounded-2xl p-7 bg-white/5 reveal">
+        <i class="fa-solid fa-seedling text-lime text-3xl mb-6"></i>
+        <h3 class="font-bold text-lg mb-3">Circular Economy</h3>
+        <p class="text-gray-400 text-sm leading-6">Creating value from waste and supporting sustainable agriculture.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+    <div class="flex flex-col md:flex-row justify-between md:items-end gap-6 mb-14 reveal">
+      <div>
+        <p class="section-label mb-4">Our Projects</p>
+        <h2 class="text-3xl lg:text-5xl font-extrabold">
+          Building the Future of
+          <span class="text-green">Clean Energy.</span>
+        </h2>
+      </div>
+      <p class="text-muted text-sm leading-7 max-w-sm">
+        Explore our renewable energy infrastructure and project development capabilities.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+      <div class="project-card group rounded-2xl overflow-hidden relative h-[400px] reveal">
+        <img src="https://ik.imagekit.io/iuiy6mihw/verabagh/project_1.jpg" loading="lazy" class="absolute inset-0 w-full h-full object-cover" alt="Industrial energy facility">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+        <div class="absolute bottom-0 p-7 text-white">
+          <p class="text-lime text-xs tracking-widest font-bold mb-3">RENEWABLE ENERGY</p>
+          <h3 class="text-2xl font-bold mb-2">Energy Infrastructure</h3>
+          <p class="text-gray-300 text-sm">Integrated energy facility development.</p>
+        </div>
+      </div>
+
+      <div class="project-card group rounded-2xl overflow-hidden relative h-[400px] reveal">
+        <img src="https://ik.imagekit.io/iuiy6mihw/verabagh/project_2.jpg" loading="lazy" class="absolute inset-0 w-full h-full object-cover" alt="Waste management">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+        <div class="absolute bottom-0 p-7 text-white">
+          <p class="text-lime text-xs tracking-widest font-bold mb-3">WASTE MANAGEMENT</p>
+          <h3 class="text-2xl font-bold mb-2">Waste Processing</h3>
+          <p class="text-gray-300 text-sm">Organic waste processing solutions.</p>
+        </div>
+      </div>
+
+      <div class="project-card group rounded-2xl overflow-hidden relative h-[400px] reveal">
+        <img src="https://ik.imagekit.io/iuiy6mihw/verabagh/project_3.jpg" loading="lazy" class="absolute inset-0 w-full h-full object-cover" alt="Green energy production">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
+        <div class="absolute bottom-0 p-7 text-white">
+          <p class="text-lime text-xs tracking-widest font-bold mb-3">CLEAN FUELS</p>
+          <h3 class="text-2xl font-bold mb-2">Renewable Gas Solutions</h3>
+          <p class="text-gray-300 text-sm">Advanced gas processing and upgrading.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="text-center text-muted text-xs mt-8">
+      Project images are illustrative. Replace them with actual company projects and facilities.
+    </p>
+  </div>
+</section>
+
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="py-24 bg-cream">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <div class="reveal">
+        <p class="section-label mb-5">Why Choose Us</p>
+        <h2 class="text-3xl lg:text-5xl font-extrabold leading-tight mb-7">
+          Your Partner in
+          <span class="text-green">Sustainable Development.</span>
+        </h2>
+        <p class="text-muted leading-8 mb-9">
+          Our integrated business approach brings together infrastructure development, renewable energy solutions and responsible resource utilization.
+        </p>
+
+        <a href="#contact" class="inline-flex items-center gap-3 bg-forest text-white rounded-full px-8 py-4 text-sm font-bold hover:bg-green transition">
+          Connect With Our Team <i class="fa-solid fa-arrow-right text-lime"></i>
+        </a>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-5 reveal">
+
+        <div class="bg-white rounded-2xl p-7">
+          <i class="fa-solid fa-diagram-project text-green text-3xl mb-6"></i>
+          <h3 class="font-bold text-lg mb-3">Integrated Approach</h3>
+          <p class="text-muted text-sm leading-6">Capabilities across the renewable energy value chain.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-7">
+          <i class="fa-solid fa-microchip text-green text-3xl mb-6"></i>
+          <h3 class="font-bold text-lg mb-3">Technology Focus</h3>
+          <p class="text-muted text-sm leading-6">Emphasis on modern processing and upgrading solutions.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-7">
+          <i class="fa-solid fa-earth-asia text-green text-3xl mb-6"></i>
+          <h3 class="font-bold text-lg mb-3">Sustainability</h3>
+          <p class="text-muted text-sm leading-6">Promoting renewable resources and circular economy principles.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-7">
+          <i class="fa-solid fa-handshake text-green text-3xl mb-6"></i>
+          <h3 class="font-bold text-lg mb-3">Long-Term Focus</h3>
+          <p class="text-muted text-sm leading-6">Supporting infrastructure, operations and development.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+    <div class="bg-forest rounded-[30px] p-9 lg:p-16 relative overflow-hidden reveal">
+
+      <div class="absolute right-0 top-0 w-80 h-80 bg-green/30 blur-[100px] rounded-full"></div>
+
+      <div class="relative z-10 flex flex-col lg:flex-row justify-between items-center gap-10">
+        <div class="max-w-2xl">
+          <p class="text-lime section-label mb-5">Let's Build a Better Future</p>
+          <h2 class="text-3xl lg:text-5xl text-white font-extrabold leading-tight mb-5">
+            Together, Let's Power a Sustainable Tomorrow.
+          </h2>
+          <p class="text-gray-300 leading-7">
+            Connect with us to explore renewable energy, waste-to-energy and infrastructure development opportunities.
+          </p>
+        </div>
+
+        <a href="#contact" class="shrink-0 bg-lime text-forest px-9 py-5 rounded-full font-bold text-sm hover:bg-white transition">
+          Start a Conversation <i class="fa-solid fa-arrow-right ml-3"></i>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="py-20 sm:py-24 bg-cream">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+      <!-- LEFT CONTENT -->
+      <div class="reveal">
+
+        <p class="section-label mb-5">Contact Us</p>
+
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight mb-7">
+          Let's Discuss Your
+          <span class="text-green">Next Project.</span>
+        </h2>
+
+        <p class="text-muted leading-8 mb-10 max-w-lg">
+          Have a business enquiry, partnership opportunity or project requirement?
+          Connect with VEERAGH BIOGAS PRIVATE LIMITED. Our team is ready to hear from you.
+        </p>
+
+        <!-- WhatsApp Contact Card -->
+        <div class="bg-white rounded-2xl p-6 sm:p-7 shadow-sm border border-gray-100">
+
+          <div class="flex items-center gap-4 mb-5">
+            <div class="w-14 h-14 rounded-xl bg-[#25D366]/10 flex items-center justify-center text-[#25D366] text-3xl shrink-0">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+
+            <div>
+              <h3 class="font-bold text-lg">WhatsApp Enquiries</h3>
+              <p class="text-muted text-sm">Connect with us directly</p>
+            </div>
+          </div>
+
+          <a href="https://wa.me/919769394686?text=Enquiry%20from%20website"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="text-green font-bold text-lg hover:underline">
+            +91 97693 94686
+          </a>
+
+          <a href="https://wa.me/919769394686?text=Enquiry%20from%20website"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="mt-6 inline-flex items-center justify-center gap-3 bg-[#25D366] text-white px-6 py-3.5 rounded-xl font-bold text-sm hover:bg-[#20bd5a] transition-all duration-300 hover:-translate-y-1">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            Chat With Us
+            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+          </a>
+
+        </div>
+
+        <!-- Business Information -->
+        <div class="mt-7 flex items-start gap-4">
+          <div class="w-11 h-11 rounded-xl bg-white flex items-center justify-center text-green text-lg shrink-0">
+            <i class="fa-solid fa-leaf"></i>
+          </div>
+          <div>
+            <h3 class="font-bold mb-1">VEERAGH BIOGAS PRIVATE LIMITED</h3>
+            <p class="text-muted text-sm leading-6">
+              Sustainable energy solutions for a cleaner and greener future.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT ENQUIRY FORM -->
+      <div class="bg-white rounded-3xl p-6 sm:p-9 lg:p-10 shadow-sm reveal">
+
+        <h3 class="text-2xl font-extrabold mb-2">
+          Send Us an Enquiry
+        </h3>
+
+        <p class="text-muted text-sm mb-8">
+          Share your details and requirements with us.
+        </p>
+
+        <form id="contactForm" class="space-y-5">
+
+          <div class="grid sm:grid-cols-2 gap-5">
+
+            <div>
+              <label for="name" class="block text-sm font-semibold mb-2">
+                Full Name *
+              </label>
+              <input id="name" name="name" type="text" required
+                placeholder="Your name"
+                class="w-full bg-cream border border-gray-200 rounded-xl px-4 py-4 text-sm outline-none focus:border-green">
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-semibold mb-2">
+                Email Address
+              </label>
+              <input id="email" name="email" type="email"
+                placeholder="Your email (optional)"
+                class="w-full bg-cream border border-gray-200 rounded-xl px-4 py-4 text-sm outline-none focus:border-green">
+            </div>
+
+          </div>
+
+          <div>
+            <label for="phone" class="block text-sm font-semibold mb-2">
+              Phone Number *
+            </label>
+            <input id="phone" name="phone" type="tel" required
+              placeholder="Your contact number"
+              class="w-full bg-cream border border-gray-200 rounded-xl px-4 py-4 text-sm outline-none focus:border-green">
+          </div>
+
+          <div>
+            <label for="service" class="block text-sm font-semibold mb-2">
+              Enquiry Regarding *
+            </label>
+
+            <select id="service" name="service" required
+              class="w-full bg-cream border border-gray-200 rounded-xl px-4 py-4 text-sm outline-none focus:border-green">
+              <option value="">Select a service</option>
+              <option>Biogas & Bio-CNG</option>
+              <option>Biofuels</option>
+              <option>Green Hydrogen</option>
+              <option>Waste-to-Energy</option>
+              <option>Plant Engineering</option>
+              <option>Infrastructure Development</option>
+              <option>Business Partnership</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-semibold mb-2">
+              Your Message *
+            </label>
+            <textarea id="message" name="message" rows="4" required
+              placeholder="Tell us about your requirement..."
+              class="w-full bg-cream border border-gray-200 rounded-xl px-4 py-4 text-sm outline-none focus:border-green resize-none"></textarea>
+          </div>
+
+          <button type="submit"
+            class="w-full bg-forest text-white rounded-xl py-4 font-bold text-sm hover:bg-green transition">
+            Submit Enquiry
+            <i class="fa-solid fa-arrow-right ml-2 text-lime"></i>
+          </button>
+
+          <p id="formMessage" class="text-sm text-center text-green"></p>
+
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ================= REDESIGNED FOOTER ================= -->
+
+<footer class="bg-deep text-white pt-14 sm:pt-16 pb-7">
+  <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+    <!-- Main Footer -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 pb-12 border-b border-white/10">
+
+      <!-- Brand -->
+      <div class="lg:col-span-1">
+        <a href="#home" class="inline-flex items-center gap-3 mb-5">
+          <div class="w-12 h-12 rounded-xl bg-green flex items-center justify-center text-lime text-2xl">
+            <i class="fa-solid fa-leaf"></i>
+          </div>
+          <div>
+            <h2 class="text-xl font-extrabold tracking-wide">VEERAGH BIOGAS</h2>
+            <p class="text-[9px] tracking-[3px] text-lime font-bold mt-1">
+              PRIVATE LIMITED
+            </p>
+          </div>
+        </a>
+
+        <p class="text-gray-400 text-sm leading-7 max-w-xs">
+          Driving renewable energy innovation through sustainable waste utilization, clean fuels and integrated infrastructure.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="font-bold text-base mb-6 text-white">Quick Links</h3>
+
+        <ul class="space-y-4 text-gray-400 text-sm">
+          <li><a href="#home" class="hover:text-lime transition">Home</a></li>
+          <li><a href="#about" class="hover:text-lime transition">About Us</a></li>
+          <li><a href="#business" class="hover:text-lime transition">Our Business</a></li>
+          <li><a href="#products" class="hover:text-lime transition">Our Products</a></li>
+          <li><a href="#projects" class="hover:text-lime transition">Projects</a></li>
+        </ul>
+      </div>
+
+      <!-- Our Solutions -->
+      <div>
+        <h3 class="font-bold text-base mb-6 text-white">Our Solutions</h3>
+
+        <ul class="space-y-4 text-gray-400 text-sm">
+          <li><a href="#products" class="hover:text-lime transition">Biogas & Bio-CNG</a></li>
+          <li><a href="#products" class="hover:text-lime transition">Biofuels</a></li>
+          <li><a href="#products" class="hover:text-lime transition">Green Hydrogen</a></li>
+          <li><a href="#process" class="hover:text-lime transition">Waste-to-Energy</a></li>
+          <li><a href="#infrastructure" class="hover:text-lime transition">Infrastructure</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h3 class="font-bold text-base mb-6 text-white">Let's Connect</h3>
+
+        <p class="text-gray-400 text-sm leading-7 mb-5">
+          Have a project or business enquiry? Get in touch with our team.
+        </p>
+
+        <a href="https://wa.me/919769394686?text=Enquiry%20from%20website"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white px-5 py-3 rounded-xl font-semibold text-sm transition-all duration-300 hover:-translate-y-1 shadow-lg">
+
+          <i class="fa-brands fa-whatsapp text-xl"></i>
+          <span>+91 97693 94686</span>
+
+        </a>
+
+        <p class="text-xs text-gray-500 mt-3">
+          <i class="fa-solid fa-circle-check text-lime mr-1"></i>
+          Available for enquiries
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Bottom Footer -->
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4 pt-7 text-xs text-gray-500">
+
+      <p class="text-center md:text-left">
+        © <span id="year"></span> VEERAGH BIOGAS PRIVATE LIMITED. All Rights Reserved.
+      </p>
+
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-lime transition">Privacy Policy</a>
+        <a href="#" class="hover:text-lime transition">Terms & Conditions</a>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- ================= WHATSAPP FLOATING BUTTON ================= -->
+
+<a href="https://wa.me/919769394686?text=Enquiry%20from%20website"
+   target="_blank" rel="noopener noreferrer"
+   aria-label="Chat with VEERAGH BIOGAS PRIVATE LIMITED on WhatsApp"
+   class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white shadow-xl flex items-center justify-center text-3xl hover:scale-110 transition-transform"
+   title="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+
+<!-- ================= BACK TO TOP ================= -->
+
+<button id="backToTop" aria-label="Back to top"
+  class="fixed bottom-24 right-5 sm:bottom-24 sm:right-6 w-12 h-12 bg-green text-white rounded-full shadow-xl flex items-center justify-center opacity-0 pointer-events-none transition-all hover:bg-forest z-40">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+  // Mobile navigation
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuIcon = document.getElementById('menuIcon');
+
+  function closeMobileMenu() {
+    mobileMenu.classList.add('hidden');
+    mobileMenu.classList.remove('flex');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    menuBtn.setAttribute('aria-label', 'Open navigation');
+    menuIcon.classList.remove('fa-xmark');
+    menuIcon.classList.add('fa-bars');
+  }
+
+  menuBtn.addEventListener('click', () => {
+    const isOpen = !mobileMenu.classList.contains('hidden');
+
+    if (isOpen) {
+      closeMobileMenu();
+    } else {
+      mobileMenu.classList.remove('hidden');
+      mobileMenu.classList.add('flex');
+      menuBtn.setAttribute('aria-expanded', 'true');
+      menuBtn.setAttribute('aria-label', 'Close navigation');
+      menuIcon.classList.remove('fa-bars');
+      menuIcon.classList.add('fa-xmark');
+    }
+  });
+
+  // Close the mobile menu after a navigation link is selected.
+  document.querySelectorAll('.mobile-link').forEach(link => {
+    link.addEventListener('click', closeMobileMenu);
+  });
+
+  // Automatically close the mobile menu when the user scrolls down.
+  let lastScrollY = window.scrollY;
+  window.addEventListener('scroll', () => {
+    const currentScrollY = window.scrollY;
+    if (currentScrollY > lastScrollY && currentScrollY > 30) {
+      closeMobileMenu();
+    }
+    lastScrollY = currentScrollY;
+  }, { passive: true });
+
+  // Close the mobile menu when returning to desktop layout.
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 1024) closeMobileMenu();
+  });
+
+  // Scroll reveal animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal:not(.active)').forEach(el => {
+    observer.observe(el);
+  });
+
+  // Back to top
+  const backToTop = document.getElementById('backToTop');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 450) {
+      backToTop.classList.remove('opacity-0', 'pointer-events-none');
+    } else {
+      backToTop.classList.add('opacity-0', 'pointer-events-none');
+    }
+  });
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Dynamic copyright year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Demo contact form validation
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const message = document.getElementById('formMessage');
+    message.textContent = 'Your form is ready. Please connect a backend or form service to receive enquiries.';
+
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
