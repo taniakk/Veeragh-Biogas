@@ -433,7 +433,7 @@
     <div class="relative reveal">
       <div class="rounded-3xl overflow-hidden h-[450px] lg:h-[550px]">
         <img
-          src="https://ik.imagekit.io/iuiy6mihw/verabagh/about_section.avif" loading="lazy"
+          src="https://ik.imagekit.io/iuiy6mihw/verabagh/about_us_page.webp?updatedAt=1794656793960" loading="lazy"
           class="w-full h-full object-cover"
           alt="Sustainable green energy landscape">
       </div>
@@ -494,6 +494,165 @@
     </div>
   </div>
 </section>
+
+
+<!-- ================= OUR TEAM SECTION ================= -->
+<section id="our-team" class="relative bg-[#F5F7F1] py-20 md:py-28 px-5 overflow-hidden">
+
+    <!-- Background Decoration -->
+    <div class="absolute -top-24 -right-24 w-80 h-80 bg-[#A4CF75]/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-[#397B50]/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="relative max-w-6xl mx-auto">
+
+        <!-- Section Heading -->
+        <div class="text-center mb-14 md:mb-16 opacity-0 translate-y-8 transition-all duration-1000 ease-out"
+             data-reveal>
+
+            <span class="text-[#397B50] text-xs font-bold uppercase tracking-[4px]">
+                Leadership & Vision
+            </span>
+
+            <h2 class="text-4xl md:text-5xl font-bold text-[#102B20] mt-4 mb-5"
+                style="font-family: 'Manrope', sans-serif;">
+                Meet Our <span class="text-[#397B50]">Promoters</span>
+            </h2>
+
+            <div class="w-16 h-[3px] bg-[#A4CF75] mx-auto mb-5 rounded-full"></div>
+
+            <p class="max-w-2xl mx-auto text-gray-600 leading-relaxed">
+                The people behind our vision, bringing leadership, dedication
+                and direction to our journey.
+            </p>
+        </div>
+
+        <!-- Team Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 max-w-5xl mx-auto">
+
+            <!-- Team Member 1: Veena -->
+            <div class="group bg-white rounded-xl overflow-hidden border border-[#E3E9DF]
+                        shadow-[0_12px_35px_rgba(16,43,32,0.07)]
+                        hover:shadow-[0_20px_45px_rgba(16,43,32,0.14)]
+                        hover:-translate-y-2
+                        transition-all duration-700 ease-out
+                        opacity-0 translate-y-12
+                        data-[visible=true]:opacity-100 data-[visible=true]:translate-y-0"
+                 data-reveal data-visible="false">
+
+                <!-- Image -->
+                <div class="relative h-[420px] md:h-[460px] bg-[#EAEFE7] overflow-hidden">
+
+                    <img
+                        src="https://ik.imagekit.io/iuiy6mihw/verabagh/our_team8.jpeg"
+                        alt="Veena Raghavendranath Raju"
+                        class="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                    />
+
+                </div>
+
+                <!-- Details -->
+                <div class="relative bg-[#102B20] px-6 py-8 md:px-8 text-center">
+
+                    <div class="w-10 h-[3px] bg-[#A4CF75] mx-auto mb-5 rounded-full transition-all duration-500 group-hover:w-16"></div>
+
+                    <h3 class="text-xl md:text-2xl font-bold text-white leading-snug mb-4"
+                        style="font-family: 'Manrope', sans-serif;">
+                        VEENA RAGHAVENDRANATH RAJU
+                    </h3>
+
+                    <p class="text-[#B8D99A] text-xs md:text-sm font-semibold uppercase tracking-[2px] leading-relaxed">
+                        Promoter & Non Executive Director
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- Team Member 2: Rajan -->
+            <div class="group bg-white rounded-xl overflow-hidden border border-[#E3E9DF]
+                        shadow-[0_12px_35px_rgba(16,43,32,0.07)]
+                        hover:shadow-[0_20px_45px_rgba(16,43,32,0.14)]
+                        hover:-translate-y-2
+                        transition-all duration-700 ease-out delay-200
+                        opacity-0 translate-y-12
+                        data-[visible=true]:opacity-100 data-[visible=true]:translate-y-0"
+                 data-reveal data-visible="false">
+
+                <!-- Image -->
+                <div class="relative h-[420px] md:h-[460px] bg-[#EAEFE7] overflow-hidden">
+
+                    <img
+                        src="https://ik.imagekit.io/iuiy6mihw/verabagh/our_team2.jpeg"
+                        alt="Rajan Shankar Salunkhe"
+                        class="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                    />
+
+                </div>
+
+                <!-- Details -->
+                <div class="relative bg-[#102B20] px-6 py-8 md:px-8 text-center">
+
+                    <div class="w-10 h-[3px] bg-[#A4CF75] mx-auto mb-5 rounded-full transition-all duration-500 group-hover:w-16"></div>
+
+                    <h3 class="text-xl md:text-2xl font-bold text-white leading-snug mb-4"
+                        style="font-family: 'Manrope', sans-serif;">
+                        RAJAN SHANKAR SALUNKHE
+                    </h3>
+
+                    <p class="text-[#B8D99A] text-xs md:text-sm font-semibold uppercase tracking-[2px] leading-relaxed">
+                        Promoter & Non Executive Director
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- ================= END OUR TEAM SECTION ================= -->
+
+
+<!-- ================= TEAM SCROLL ANIMATION ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const elements = document.querySelectorAll("[data-reveal]");
+
+    if ("IntersectionObserver" in window) {
+
+        const observer = new IntersectionObserver((entries, observer) => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+                    entry.target.setAttribute("data-visible", "true");
+                    entry.target.classList.remove("opacity-0", "translate-y-8", "translate-y-12");
+                    entry.target.classList.add("opacity-100", "translate-y-0");
+
+                    observer.unobserve(entry.target);
+                }
+
+            });
+
+        }, {
+            threshold: 0.15
+        });
+
+        elements.forEach(element => observer.observe(element));
+
+    } else {
+
+        elements.forEach(element => {
+            element.classList.remove("opacity-0", "translate-y-8", "translate-y-12");
+            element.classList.add("opacity-100", "translate-y-0");
+        });
+
+    }
+
+});
+</script>
+<!-- ================= END TEAM ANIMATION ================= -->
+
+
 
 
 <!-- ================= BUSINESS ================= -->
@@ -818,7 +977,7 @@
     <div class="grid grid-cols-2 gap-4 reveal">
       <img src="https://ik.imagekit.io/iuiy6mihw/verabagh/business_img1.avif" loading="lazy" class="rounded-2xl h-64 w-full object-cover" alt="Industrial plant">
       <img src="https://ik.imagekit.io/iuiy6mihw/verabagh/infrastructure_section2.avif" loading="lazy" class="rounded-2xl h-64 w-full object-cover mt-10" alt="Energy infrastructure">
-      <img src="https://ik.imagekit.io/iuiy6mihw/verabagh/about_section.avif" loading="lazy" class="rounded-2xl h-64 w-full object-cover" alt="Renewable energy">
+      <img src="https://ik.imagekit.io/iuiy6mihw/verabagh/project_3.jpg?updatedAt=1794415753355" loading="lazy" class="rounded-2xl h-64 w-full object-cover" alt="Renewable energy">
       <img src="https://ik.imagekit.io/iuiy6mihw/verabagh/business_img3.avif" loading="lazy" class="rounded-2xl h-64 w-full object-cover mt-10" alt="Waste processing">
     </div>
   </div>
@@ -1161,14 +1320,14 @@
             </div>
           </div>
 
-          <a href="https://wa.me/919769394686?text=Enquiry%20from%20website"
+          <a href="https://wa.me/919920653635?text=Enquiry%20from%20website"
              target="_blank"
              rel="noopener noreferrer"
              class="text-green font-bold text-lg hover:underline">
-            +91 97693 94686
+            +91 99206 53635
           </a>
 
-          <a href="https://wa.me/919769394686?text=Enquiry%20from%20website"
+          <a href="https://wa.me/919920653635?text=Enquiry%20from%20website"
              target="_blank"
              rel="noopener noreferrer"
              class="mt-6 inline-flex items-center justify-center gap-3 bg-[#25D366] text-white px-6 py-3.5 rounded-xl font-bold text-sm hover:bg-[#20bd5a] transition-all duration-300 hover:-translate-y-1">
@@ -1348,13 +1507,13 @@
           Have a project or business enquiry? Get in touch with our team.
         </p>
 
-        <a href="https://wa.me/919769394686?text=Enquiry%20from%20website"
+        <a href="https://wa.me/919920653635?text=Enquiry%20from%20website"
            target="_blank"
            rel="noopener noreferrer"
            class="inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white px-5 py-3 rounded-xl font-semibold text-sm transition-all duration-300 hover:-translate-y-1 shadow-lg">
 
           <i class="fa-brands fa-whatsapp text-xl"></i>
-          <span>+91 97693 94686</span>
+          <span>+91 99206 53635</span>
 
         </a>
 
@@ -1387,7 +1546,7 @@
 
 <!-- ================= WHATSAPP FLOATING BUTTON ================= -->
 
-<a href="https://wa.me/919769394686?text=Enquiry%20from%20website"
+<a href="https://wa.me/919920653635?text=Enquiry%20from%20website"
    target="_blank" rel="noopener noreferrer"
    aria-label="Chat with VEERAGH BIOGAS PRIVATE LIMITED on WhatsApp"
    class="fixed bottom-5 right-4 sm:bottom-6 sm:right-6 z-50 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#25D366] text-white shadow-xl flex items-center justify-center text-2xl sm:text-3xl hover:scale-110 transition-transform"
